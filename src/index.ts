@@ -1,5 +1,4 @@
 import yargs, { string } from "yargs";
-import chalk from "chalk";
 import {
   readAllTask,
   createTask,
@@ -41,7 +40,7 @@ yargs.command({
   command: "read-all",
   handler: () => {
     const result = readAllTask();
-    console.log(chalk.blue("taskJson : "), result);
+    console.log(("complete : "), result);
   },
 });
 
